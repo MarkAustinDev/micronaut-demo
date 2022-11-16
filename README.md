@@ -2,6 +2,8 @@
 
 Example API application following the [official Micronaut tutorial](https://guides.micronaut.io/latest/creating-your-first-micronaut-app-gradle-kotlin.html)
 
+This is a test message
+
 - [User Guide](https://docs.micronaut.io/3.7.3/guide/index.html)
 - [API Reference](https://docs.micronaut.io/3.7.3/api/index.html)
 - [Configuration Reference](https://docs.micronaut.io/3.7.3/guide/configurationreference.html)
