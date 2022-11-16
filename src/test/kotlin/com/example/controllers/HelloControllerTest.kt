@@ -12,8 +12,10 @@ import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 
+// initialize the application context and the embedded server
 @MicronautTest
 class HelloControllerTest {
+    // Inject client bean and point it to the embedded server
     @Inject
     @field:Client("/")
     lateinit var client: HttpClient
@@ -22,6 +24,7 @@ class HelloControllerTest {
     inner class EndpointTests {
         @Test
         fun `should return a message when a  GET request is made to an endpoint that exists`() {
+           // HTTP request made via the Micronaut framework fluid API
             val request: HttpRequest<Any> = HttpRequest.GET("/hello")
             val body = client.toBlocking().retrieve(request)
             assertNotNull(body)
